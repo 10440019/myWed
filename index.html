@@ -4,7 +4,8 @@
   <meta charset="BIG5">
   <title>用中文寫頁籤</title>
   <style>
-    body {background-color: blue;}
+    body {background-color: blue;
+    margin: 0px;}
     header { background-color: rgb(223, 212, 20);
     color: darkcyan;
     clear: left;
@@ -15,6 +16,10 @@
       font-size: 150px;
   
 }
+    myContainer {
+      margin: 0 auto;
+      width: 800px;
+    }
     nav {background-color: tomato;
     padding: initial;
 color:rgb(218, 18, 26); ;
@@ -23,7 +28,17 @@ text-align: -webkit-center;
    font-size: 60px;
     margin: 25px
     }
-   
+   ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      overflow:hidden;
+    }
+    li {
+      float: left;
+      width: 250px;
+      text-align: center;
+    }
     section { background-color: beige;
       margin-right: 300px;
     PADDING: 1em;
@@ -64,18 +79,31 @@ text-align: center;}
     <header>my header</header>
     
    
-    <nav>my nav</nav>
-
+    <nav>
+      <div class="myContainer">
+        <!--my nav-->
+        <ul>
+          <li>Home</li>
+          <li>Gallery</li>
+          <li>Interests</li>
+          </ul>
+        </div>
+    </nav>
+<div class="myContainer">
     <section  >my section   
       <article >my article1 </article>
       <article >my article2 </article>
       <article >my article3 </article> 
       <article >my article4 </article>
     </section>
-   
-    
+   </div>
+    <div class="myContainer">
     <aside >my aside </aside>
-    <footer >my footer
+      </div>
+    
+    <footer >
+      <div class="myContainer">
+      my footer
     <img src="myQrCode.jpg" height: 120px;
 padding: 10px;>
      <div id="myAddress">
@@ -83,6 +111,7 @@ padding: 10px;>
       <p> 校本部 高雄市84001大樹區學城路一段1號 Tel:(07)6577711 </p>
     <p> 醫學院區 高雄市82445燕巢區角宿里義大路8號 Tel:(07)6151100 </p> 
        </div>
+        </div>
     </footer>
     
   </body>
