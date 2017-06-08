@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jiarong's Animation</title>
+<link rel="stylesheet" type="text/css" href="/browserref.css">
+<style> 
+#animated_div {
+  width:76px;
+  height:47px;
+  background: red;
+color: #ffffff;
+position: relative;
+font-weight:bold;
+font-size:20px;
+padding:10px;
+animation:animated_div 6s 1;
+-moz-animation:animated_div 6s 1;
+-webkit-animation:animated_div 6s 1;
+-o-animation:animated_div 6s 1;
+border-radius:5px;
+  -webkit-border-radius:5px;
+}
+@-webkit-keyframes animated_div
+{
+0% {-webkit-transform: rotate(0deg);left:0px;}
+25% {-webkit-transform: rotate(20deg);left:0px;}
+50% {-webkit-transform: rotate(0deg);left:500px;}
+55% {-webkit-transform: rotate(0deg);left:500px;}
+70% {-webkit-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {-webkit-transform: rotate(-360deg);left:0px;}
+} 
+ 
+</style>
+</head>
+<body>
+  <div id="animated_div">CSS3<br><span style="font-size:10px;">Animation</span></div>
+
+ </body>
+</html>
